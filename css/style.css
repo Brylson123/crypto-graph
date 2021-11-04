@@ -1,0 +1,73 @@
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-size: arial, Sans-serif;
+        }
+
+        body {
+            background-image: url("img/Crypto.png");
+            background-size: 100% 100%;
+            z-index: -1;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+
+        .box {
+            position: absolute;
+            top: 150px;
+            left: 20px;
+            width: 300px;
+            height: 300px;
+            border: solid black 3px;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .box select {
+            width: 100px;
+            height: 50px;
+            font-size: 25px;
+            margin-top: 70px;
+        }
+
+        .box p {
+            animation: slide 7s infinite linear;
+            font-size: 30px;
+            font-weight: 700;
+            overflow: hidden;
+            transform: translateX(-100%);
+            margin-top: 10px;
+            text-shadow: -1px -1px 0px #000,
+                0px -1px 0px #000,
+                1px -1px 0px #000,
+                -1px 0px 0px #000,
+                1px 0px 0px #000,
+                -1px 1px 0px #000,
+                0px 1px 0px #000,
+                1px 1px 0px #000;
+            color: white;
+        }
+
+
+        #boxc {
+            width: 1050px;
+            height: 644px;
+            border: solid black 3px;
+            position: absolute;
+            left: 500px;
+            top: 30px;
+        }
+
+
+        @keyframes slide {
+
+            /* 50%{
+                        transform: translateX(0);
+                    } */
+
+            100% {
+                transform: translateX(110%);
+            }
+        }
